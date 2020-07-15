@@ -23,6 +23,10 @@ test_run portal-search/portal-search-test \
 
 # Highest coverage of Search (most critical first)
 
+test_run change-tracking/change-tracking-test \
+	*.search.*Test \
+; \
+
 test_run users-admin/users-admin-test \
 	*.search.*Test \
 	com.liferay.users.admin.indexer.test.*Test
@@ -40,7 +44,8 @@ test_run dynamic-data-mapping/dynamic-data-mapping-test \
 	com.liferay.dynamic.data.mapping.staging.test.DDMFormInstanceStagingTest \
 	com.liferay.dynamic.data.mapping.storage.test.StorageAdapterTest \
 	com.liferay.dynamic.data.mapping.test.DDMStructureManagerTest \
-	com.liferay.dynamic.data.mapping.upgrade.v2_0_3.test.UpgradeDDMFormInstanceSettingsTest
+	com.liferay.dynamic.data.mapping.upgrade.v2_0_3.test.UpgradeDDMFormInstanceSettingsTest \
+; \
 
 test_run document-library/document-library-test \
 	*.search.*Test \
@@ -136,6 +141,10 @@ test_run message-boards/message-boards-test \
 test_run organizations/organizations-test \
 	*.search.*Test \
 	com.liferay.organizations.service.test.OrganizationLocalServiceWhenSearchingOrganizationsTreeTest \
+; \
+
+test_run polls/polls-test \
+	*.search.*Test \
 ; \
 
 test_run portal-workflow/portal-workflow-kaleo-test \
