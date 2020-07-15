@@ -14,7 +14,7 @@
 		<priority value="DEBUG" />
 	</category>
 	<category name="com.liferay.portal.search.internal.indexer.BaseModelRetrieverImpl">
-		<priority value="WARN" />
+		<priority value="ERROR" />
 	</category>
 	<category name="com.liferay.portal.search.internal.indexer.DefaultIndexer">
 		<priority value="DEBUG" />
