@@ -248,7 +248,8 @@ function do_test_run()
 	export LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_DEPENDENCY_PERIOD_MANAGER_PERIOD_SYNC_PERIOD_TIMEOUT=900
 
 	${LIFERAY_PORTAL_DIR}/gradlew cleanTestIntegration testIntegration --stacktrace \
-		${arg__app_server_parent_dir} -Dsetup.wizard.enabled=false "${gwtests[@]}"
+		${arg__app_server_parent_dir} -Dorg.gradle.daemon=false -Dsetup.wizard.enabled=false \
+		"${gwtests[@]}"
 
 #	\
 #	--quiet \
