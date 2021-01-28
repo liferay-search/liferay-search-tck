@@ -19,7 +19,8 @@ function run_all_tests()
 # portal-search-test
 
 test_run portal-search/portal-search-test \
-	*Test
+	*Test \
+; \
 
 # Highest coverage of Search (most critical first)
 
@@ -29,7 +30,8 @@ test_run change-tracking/change-tracking-test \
 
 test_run users-admin/users-admin-test \
 	*.search.*Test \
-	com.liferay.users.admin.indexer.test.*Test
+	com.liferay.users.admin.indexer.test.*Test \
+; \
 
 test_run dynamic-data-mapping/dynamic-data-mapping-test \
 	*.search.*Test \
@@ -278,6 +280,18 @@ function test_run()
 	local tests=( "$@" ) 
 
 	local directory=${LIFERAY_PORTAL_DIR}/modules/apps/$subdir
+	local no_settings_gradle=true
+
+	do_test_run $directory $no_settings_gradle "${tests[@]}"
+}
+
+function test_run_dxp()
+{
+	local subdir=$1
+	shift 1
+	local tests=( "$@" ) 
+
+	local directory=${LIFERAY_PORTAL_DIR}/modules/dxp/apps/$subdir
 	local no_settings_gradle=true
 
 	do_test_run $directory $no_settings_gradle "${tests[@]}"
