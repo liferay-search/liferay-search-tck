@@ -149,6 +149,9 @@ test_run polls/polls-test \
 	*.search.*Test \
 ; \
 
+test_run portal-workflow/portal-workflow-kaleo-test \
+	com.liferay.portal.workflow.kaleo.internal.runtime.integration.test.WorkflowTaskManagerImplTest
+
 test_run redirect/redirect-test \
 	*.search.*Test \
 ; \
