@@ -134,7 +134,10 @@ test_run dynamic-data-lists/dynamic-data-lists-test \
 	*.search.*Test
 
 test_run layout/layout-test \
-	*.search.*Test
+	*.search.*Test \
+	com.liferay.layout.search.test.LayoutIndexerReindexTest \
+	com.liferay.layout.search.test.LayoutRelevanceSearchTest \
+; \
 
 test_run message-boards/message-boards-test \
 	*.search.*Test \
