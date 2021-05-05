@@ -132,7 +132,7 @@ test_run depot/depot-test \
 
 test_run dynamic-data-lists/dynamic-data-lists-test \
 	*.search.*Test
-	
+
 test_run layout/layout-test \
 	com.liferay.layout.search.test.LayoutIndexerReindexTest \
 	com.liferay.layout.search.test.LayoutRelevanceSearchTest \
