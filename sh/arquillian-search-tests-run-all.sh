@@ -19,25 +19,7 @@ function run_all_tests()
 # portal-search-test
 
 test_run portal-search/portal-search-test \
-	com.liferay.portal.search.agregations.*Test \
-	com.liferay.portal.search.document.test.*Test \
-	com.liferay.portal.search.engine.adapter.test.*Test \
-	com.liferay.portal.search.facet.faceted.searcher.test.*Test \
-	com.liferay.portal.search.geolocation.test.*Test \
-	com.liferay.portal.search.highlight.test.*Test \
-	com.liferay.portal.search.internal.test.*Test \
-	com.liferay.portal.search.localization.test.*Test \
-	com.liferay.portal.search.multilanguage.test.*Test \
-	com.liferay.portal.search.pagination.test.*Test \
-	com.liferay.portal.search.query.*Test \
-	com.liferay.portal.search.sript.test.*Test \
-	com.liferay.portal.search.searcher.test.*Test \
-	com.liferay.portal.search.significance.test.*test \
-	com.liferay.portal.search.sort.test.*Test \
-	com.liferay.portal.search.test.*Test \
-	com.liferay.portal.search.indexer.clauses.test.*Test \
-	com.liferay.portal.search.indexer.post.processor.test.*Test \
-	com.liferay.portal.search.test.*Test \
+	*Test \
 ; \
 
 # Highest coverage of Search (most critical first)
