@@ -75,7 +75,8 @@ test_run headless/headless-admin-user/headless-admin-user-test \
 ; \
 
 test_run headless/headless-admin-taxonomy/headless-admin-taxonomy-test \
-	com.liferay.headless.admin.taxonomy.resource.v1_0.test.TaxonomyVocabularyResourceTest
+	com.liferay.headless.admin.taxonomy.resource.v1_0.test.TaxonomyVocabularyResourceTest \
+; \
 
 # Highest coverage of Search, part 2 (alphabetical)
 
@@ -93,26 +94,32 @@ test_run blogs/blogs-test \
 	*.search.*Test \
 	com.liferay.blogs.asset.test.BlogsEntryAssetSearchTest \
 	com.liferay.blogs.service.test.BlogsEntryStatusTransitionTest \
-	com.liferay.blogs.service.test.BlogsEntryTrashHandlerTest
+	com.liferay.blogs.service.test.BlogsEntryTrashHandlerTest \
+; \
 
 test_run calendar/calendar-test \
-	*.search.*Test
+	*.search.*Test \
+; \
 
 test_run sharing/sharing-search-test \
-	*Test
+	*Test \
+; \
 
 test_run user-groups-admin/user-groups-admin-web-test \
-	*.search.*Test 
+	*.search.*Test \
+; \
 
 # All other tests using Search in some capacity (alphabetical)
 
 test_run account/account-test \
+	*.search.*Test \
 	com.liferay.account.retriever.test.*Test \
 	com.liferay.account.service.test.AccountEntryLocalServiceTest \
 ; \
 
 test_run asset/asset-publisher-test \
-	com.liferay.asset.publisher.lar.test.AssetPublisherExportImportTest
+	com.liferay.asset.publisher.lar.test.AssetPublisherExportImportTest \
+; \
 
 test_run bookmarks/bookmarks-test \
 	*.search.*Test \
@@ -122,16 +129,20 @@ test_run bookmarks/bookmarks-test \
 ; \
 
 test_run configuration-admin/configuration-admin-test \
-	*.search.*Test
+	*.search.*Test \
+; \
 
 test_run data-engine/data-engine-rest-test \
-	com.liferay.data.engine.rest.resource.v2_0.test.DataDefinitionResourceTest
+	com.liferay.data.engine.rest.resource.v2_0.test.DataDefinitionResourceTest \
+; \
 
 test_run depot/depot-test \
 	*.search.*Test \
+; \
 
 test_run dynamic-data-lists/dynamic-data-lists-test \
-	*.search.*Test
+	*.search.*Test \
+; \
 
 test_run layout/layout-test \
 	com.liferay.layout.search.test.LayoutIndexerReindexTest \
@@ -140,7 +151,8 @@ test_run layout/layout-test \
 
 test_run message-boards/message-boards-test \
 	*.search.*Test \
-	com.liferay.message.boards.trash.test.MBThreadTrashHandlerTest
+	com.liferay.message.boards.trash.test.MBThreadTrashHandlerTest \
+; \
 
 test_run organizations/organizations-test \
 	*.search.*Test \
@@ -152,7 +164,8 @@ test_run polls/polls-test \
 ; \
 
 test_run portal-workflow/portal-workflow-kaleo-test \
-	com.liferay.portal.workflow.kaleo.internal.runtime.integration.test.WorkflowTaskManagerImplTest
+	com.liferay.portal.workflow.kaleo.internal.runtime.integration.test.WorkflowTaskManagerImplTest \
+; \
 
 test_run redirect/redirect-test \
 	*.search.*Test \
