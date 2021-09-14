@@ -159,10 +159,6 @@ test_run organizations/organizations-test \
 	com.liferay.organizations.service.test.OrganizationLocalServiceWhenSearchingOrganizationsTreeTest \
 ; \
 
-test_run polls/polls-test \
-	*.search.*Test \
-; \
-
 test_run portal-workflow/portal-workflow-kaleo-test \
 	com.liferay.portal.workflow.kaleo.internal.runtime.integration.test.WorkflowTaskManagerImplTest \
 ; \
