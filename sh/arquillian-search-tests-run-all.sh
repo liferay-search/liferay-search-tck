@@ -118,7 +118,7 @@ test_run account/account-test \
 ; \
 
 test_run asset/asset-publisher-test \
-	com.liferay.asset.publisher.lar.test.AssetPublisherExportImportTest \
+	com.liferay.asset.publisher.exportimport.test.AssetPublisherExportImportTest \
 ; \
 
 test_run bookmarks/bookmarks-test \
